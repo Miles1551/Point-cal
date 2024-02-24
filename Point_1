@@ -1,0 +1,56 @@
+# Write code below 💖
+Gryffindor = 0
+Ravenclaw = 0
+Hufflepuff = 0
+Slytherin = 0
+
+q1 = int(input("Q1) Do you like Dawn or Dusk?\n1)Dawn\n2)Dusk\n" ))
+while q1 not in {1,2}:
+  q1 = int(input("Incorrect. Try again " ))
+if q1 == 1:
+  Gryffindor = Gryffindor + 1
+  Ravenclaw = Ravenclaw + 1
+elif q1 == 2:
+  Hufflepuff = Hufflepuff + 1 
+  Slytherin = Slytherin + 1
+else:
+  print("Wrong input")
+
+
+q2 = int(input("When I am dead, I want people to remember me as\n1)The Good\n2) The Great\n3) The Wise\n4) The Bold\n" ))
+while q2 not in {1,2,3,4}:
+  q2 = int(input("Incorrect. Try again " ))
+if q2 == 1:
+  Hufflepuff = Hufflepuff + 2
+elif q2 == 2:
+  Slytherin = Slytherin + 2
+elif q2 == 3:
+  Ravenclaw = Ravenclaw + 2
+elif q2 == 4:
+  Gryffindor = Gryffindor + 2
+else:
+  print("Wrong input")
+
+q3 = int(input("Which kind of instrument most pleases your ear\n1)The Violin)\n2)The Trumpet\n3)The Piano\n4)The Drum\n" ))
+while q3 not in {1,2,3,4}:
+  q3 = int(input("Incorrect. Try again " ))
+if q3 == 1:
+  Slytherin = Slytherin + 4
+elif q3 == 2:
+  Hufflepuff = Hufflepuff + 4
+elif q3 == 3:
+  Ravenclaw = Ravenclaw + 4
+elif q3 == 4:
+  Gryffindor = Gryffindor + 4
+else:
+  print("Wrong input")
+x = max(Hufflepuff, Slytherin, Ravenclaw, Gryffindor)
+print(x)
+if Hufflepuff > Slytherin and Hufflepuff > Ravenclaw and Hufflepuff > Gryffindor:
+  print("Hufflepuff has the most points")
+elif Slytherin > Ravenclaw and Slytherin > Gryffindor:
+  print("Slyhterin has the most points")
+elif Ravenclaw > Gryffindor:
+  print("Ravenclaw has the most points")
+else:
+  print("Gryffindor has the most points")
